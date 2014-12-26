@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61F3BF91A4D3FBF0051FE4D /* NewFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C61F3BF81A4D3FBF0051FE4D /* NewFile.m */; };
 		C6BB6F9E1A4AB878006E3AE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB6F9D1A4AB878006E3AE9 /* main.m */; };
 		C6BB6FA11A4AB878006E3AE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB6FA01A4AB878006E3AE9 /* AppDelegate.m */; };
 		C6BB6FA41A4AB878006E3AE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB6FA31A4AB878006E3AE9 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C61F3BF71A4D3FBF0051FE4D /* NewFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFile.h; sourceTree = "<group>"; };
+		C61F3BF81A4D3FBF0051FE4D /* NewFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFile.m; sourceTree = "<group>"; };
 		C6BB6F981A4AB878006E3AE9 /* Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BB6F9C1A4AB878006E3AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6BB6F9D1A4AB878006E3AE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		C6BB6FB11A4AB879006E3AE9 /* BlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BB6FB61A4AB879006E3AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6BB6FB71A4AB879006E3AE9 /* BlocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocksTests.m; sourceTree = "<group>"; };
+		C6BB6FC11A4AB89E006E3AE9 /* TypeDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeDefs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				C6BB6FA01A4AB878006E3AE9 /* AppDelegate.m */,
 				C6BB6FA21A4AB878006E3AE9 /* ViewController.h */,
 				C6BB6FA31A4AB878006E3AE9 /* ViewController.m */,
+				C6BB6FC11A4AB89E006E3AE9 /* TypeDefs.h */,
 				C6BB6FA51A4AB878006E3AE9 /* Main.storyboard */,
 				C6BB6FA81A4AB878006E3AE9 /* Images.xcassets */,
 				C6BB6FAA1A4AB878006E3AE9 /* LaunchScreen.xib */,
@@ -98,6 +103,8 @@
 			children = (
 				C6BB6F9C1A4AB878006E3AE9 /* Info.plist */,
 				C6BB6F9D1A4AB878006E3AE9 /* main.m */,
+				C61F3BF71A4D3FBF0051FE4D /* NewFile.h */,
+				C61F3BF81A4D3FBF0051FE4D /* NewFile.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 			files = (
 				C6BB6FA41A4AB878006E3AE9 /* ViewController.m in Sources */,
 				C6BB6FA11A4AB878006E3AE9 /* AppDelegate.m in Sources */,
+				C61F3BF91A4D3FBF0051FE4D /* NewFile.m in Sources */,
 				C6BB6F9E1A4AB878006E3AE9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +420,7 @@
 				C6BB6FBD1A4AB879006E3AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6BB6FBE1A4AB879006E3AE9 /* Build configuration list for PBXNativeTarget "BlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				C6BB6FC01A4AB879006E3AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

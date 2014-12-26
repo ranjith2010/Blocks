@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TypeDefs.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self pr_withReturnType];
+    [self pr_withOutReturnType];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+// Get back the Parameter using Block
+- (void)pr_withReturnType{
+    [self pr_callmeWithReturn :^(NSString *hi ,NSString *second){
+        NSLog(@"%@",hi);
+    }];
 }
+     
+- (void)pr_callmeWithReturn :(void(^)(NSString *string , NSString *second))block{
+    block(@"Welcome",nil);
+}
+
+// Just  call the Block, No need to return Anything!
+
+- (void)pr_withOutReturnType{
+    [self pr_callmeWithOutReturn :^(void){
+    }];
+}
+
+- (void)pr_callmeWithOutReturn :(void(^)(void))block{
+    NSLog(@"No ReturnType Method Invoked!");
+}
+
+
+
+
+
 
 @end

@@ -9,5 +9,11 @@
 #ifndef Blocks_TypeDefs_h
 #define Blocks_TypeDefs_h
 
+/*
+ Block declaration for send back Array of String values
+*/
+typedef void (^CompletionBlock)(NSString *title);
+
+typedef void (^GenericSetOfBlock)(NSArray *arrayOfStrings);
 
 #endif
